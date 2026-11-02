@@ -11,14 +11,25 @@
 </head>
 
 <body>
+
+  <div id="pantalla-carga">
+  <img src="titulo-raiz.png" alt="Cargando">
+  <div class="spinner"></div>
+</div>
+
   <header>
     <div class="titulo">
       <a href="index.html">
         <img src="titulo-raiz.png" alt="Raíces Históricas - En busca de la cultura">
       </a>
 
-      <p id="bienvenida">Bienvenido viajero, en "Raíces Históricas" deberas responder preguntas acerca de historia Argentina. ¿Serás capaz de contestar bien en todas?</p>
+      <p>Bienvenido viajero, en "Raíces Históricas" deberas responder preguntas acerca de historia Argentina. ¿Serás capaz de contestar bien en todas?</p>
     </div>
+
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="historias.html">Historias</a>
+    </nav>
 </header>
 
 <main>
@@ -26,36 +37,13 @@
       <video autoplay muted loop playsinline poster="jungla.jpg">
         <source src="jungla.mp4" type="video/mp4">
       </video>
-      <button id="btn-comenzar" class="btn-comenzar" aria-label="Comenzar expedición"><img src="boton-comenzar.png" alt="Comenzar expedición"></button>
-      <div id="juego" class="juego" hidden>
-        <button id="btn-menu" class="btn-menu" type="button">&larr; Menú principal</button>
-        <div class="hud">
-          <span id="hud-nivel">Nivel 1 de 5</span>
-          <span id="hud-puntos">Puntos: 0</span>
-        </div>
-        <div class="mapa" id="mapa">
-          <img src="mapa.png" alt="Mapa de la expedición" class="mapa-img">
-          <img src="explorador.png" alt="Explorador" id="personaje" class="personaje">
-        </div>
-        <div id="panel-pregunta" class="panel-pregunta" hidden>
-          <h2 id="pregunta-texto"></h2>
-          <div id="opciones" class="opciones"></div>
-          <p id="feedback" class="feedback" aria-live="polite"></p>
-        </div>
-        <div id="panel-final" class="panel-final" hidden>
-          <h2 id="final-titulo"></h2>
-          <p id="final-texto"></p>
-          <div class="acciones-final">
-            <button id="btn-reiniciar" class="btn-reiniciar" type="button">Volver a jugar</button>
-            <button id="btn-menu-final" class="btn-menu-final" type="button">Menú principal</button>
-          </div>
-        </div>
-      </div>
     </section>
 </main>
 
   <footer>
   </footer>
-  <script src="script.js"></script>
 </body>
-</html>
+
+<script src="main.js"></script>
+
+</html
