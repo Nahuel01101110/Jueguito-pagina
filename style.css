@@ -295,3 +295,47 @@ header {
     font-size: .85rem;
   }
 }
+
+/* ===== Pantalla de carga ===== */
+#pantalla-carga {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #1e3a2a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  transition: opacity 1s;
+}
+
+#pantalla-carga img {
+  width: min(500px, 80vw);
+  height: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+#pantalla-carga.oculta {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid rgba(243, 230, 196, 0.25);
+  border-top-color: #f3e6c4;
+  border-radius: 50%;
+  animation: girar 0.9s linear infinite;
+}
+
+@keyframes girar {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation-duration: 2.5s;
+  }
+}

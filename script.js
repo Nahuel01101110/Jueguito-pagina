@@ -206,3 +206,31 @@ botonComenzar.addEventListener("click", () => iniciarJuego());
 botonReiniciar.addEventListener("click", () => iniciarJuego(false));
 botonMenu.addEventListener("click", volverAlMenu);
 botonMenuFinal.addEventListener("click", volverAlMenu);
+
+// ===== Pantalla de carga =====
+const pantallaCarga = document.getElementById("pantalla-carga");
+const videoHero = document.querySelector(".hero video");
+let cargaOculta = false;
+
+function ocultarPantallaCarga() {
+	if (cargaOculta || !pantallaCarga) return;
+	cargaOculta = true;
+	pantallaCarga.classList.add("oculta");
+	setTimeout(() => pantallaCarga.remove(), 1000);
+}
+
+if (pantallaCarga) {
+	const esperas = [
+		new Promise((ok) => {
+			if (document.readyState === "complete") ok();
+			else window.addEventListener("load", ok, { once: true });
+		})
+	];
+
+	if (videoHero && videoHero.readyState < 3) {
+		esperas.push(new Promise((ok) => videoHero.addEventListener("canplay", ok, { once: true })));
+	}
+
+	Promise.all(esperas).then(ocultarPantallaCarga);
+	setTimeout(ocultarPantallaCarga, 8000);
+}
