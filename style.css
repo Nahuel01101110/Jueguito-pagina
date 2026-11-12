@@ -88,25 +88,29 @@ header {
 .opcion:focus-visible,
 .btn-reiniciar:focus-visible,
 .btn-menu:focus-visible,
-.btn-menu-final:focus-visible {
+.btn-menu-final:focus-visible,
+.btn-continuar:focus-visible {
   outline: 4px solid #f3e6c4;
   outline-offset: 4px;
 }
 
 .juego {
+  /* Ancho del mapa y del HUD: se achica en pantallas bajas para que quepa la explicación */
+  --ancho-juego: min(94vw, max(320px, min(1000px, calc(300vh - 1400px))));
   position: absolute;
   inset: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 12px;
-  padding: 120px 16px 16px;
+  padding: clamp(112px, 13vh, 170px) 16px 16px;
   box-sizing: border-box;
+  overflow-y: auto;   /* respaldo: si en una pantalla muy baja no entra todo, se puede scrollear */
 }
 
 .jugando .titulo img {
-  width: min(260px, 50vw);
+  width: min(220px, 50vw);
 }
 
 .jugando #bienvenida,
@@ -115,7 +119,7 @@ header {
 }
 
 .hud {
-  width: min(1000px, 94vw, 105vh);
+  width: var(--ancho-juego);
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -138,7 +142,7 @@ header {
 
 .mapa {
   position: relative;
-  width: min(1000px, 94vw, 105vh);
+  width: var(--ancho-juego);
   box-sizing: border-box;
   border: 4px solid #8b6b3d;
   border-radius: 12px;
@@ -178,7 +182,7 @@ header {
   background: rgba(30, 20, 10, .85);
   border: 3px solid #8b6b3d;
   border-radius: 16px;
-  padding: 18px 24px;
+  padding: 16px 24px;
   color: #f3e6c4;
   font-family: "Lora", serif;
   text-align: center;
@@ -186,7 +190,8 @@ header {
 
 .panel-pregunta h2,
 .panel-final h2 {
-  font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+  font-size: clamp(1.05rem, 2vw, 1.4rem);
+  margin: 0 0 14px;
 }
 
 .opciones {
@@ -197,7 +202,8 @@ header {
 
 .opcion,
 .btn-reiniciar,
-.btn-menu-final {
+.btn-menu-final,
+.btn-continuar {
   background: #5a3e1b;
   border: 2px solid #8b6b3d;
   color: #f3e6c4;
@@ -225,12 +231,39 @@ header {
 }
 
 .feedback {
-  min-height: 1.5em;
-  font-style: italic;
   margin: 12px 0 0;
 }
 
-.btn-reiniciar {
+.feedback:empty {
+  margin: 0;
+}
+
+.veredicto {
+  margin: 0;
+  font-weight: bold;
+}
+
+.veredicto.correcto {
+  color: #9be08f;
+}
+
+.veredicto.incorrecto {
+  color: #ff9c8f;
+}
+
+.explicacion {
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.btn-continuar {
+  margin-top: 12px;
+  padding: 10px 28px;
+}
+
+.btn-reiniciar,
+.btn-continuar {
   background: #3f7d3a;
 }
 
