@@ -390,11 +390,10 @@ footer {
   box-sizing: border-box;
   padding: 0.7rem 1rem;
   text-align: center;
-  background: #1e140a;
-  border-top: 3px solid #8b6b3d;
-  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   color: #f3e6c4;
   font-family: "Lora", serif;
+  pointer-events: none;
 }
 
 footer p {
@@ -409,6 +408,6 @@ body.jugando footer {
 
 @media (display-mode: fullscreen) {
   .btn-comenzar {
-    bottom: 150px;
+    bottom: 140px;
   }
 }
