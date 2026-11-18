@@ -96,7 +96,7 @@ header {
 
 .juego {
   /* Ancho del mapa y del HUD: se achica en pantallas bajas para que quepa la explicación */
-  --ancho-juego: min(94vw, max(320px, min(1000px, calc(300vh - 1400px))));
+  --ancho-juego: min(var(--ancho-max, 9999px), min(94vw, max(320px, min(1000px, calc(300vh - 1400px)))));  /* línea cambiada */
   position: absolute;
   inset: 0;
   display: flex;
@@ -106,7 +106,12 @@ header {
   gap: 12px;
   padding: clamp(112px, 13vh, 170px) 16px 16px;
   box-sizing: border-box;
-  overflow-y: auto;   /* respaldo: si en una pantalla muy baja no entra todo, se puede scrollear */
+  overflow-y: auto;
+  scrollbar-width: none;  /* línea nueva */
+}
+
+.juego::-webkit-scrollbar {  /* regla nueva */
+  display: none;
 }
 
 .jugando .titulo img {
@@ -129,6 +134,7 @@ header {
   font-weight: bold;
   padding: 8px 16px;
   border-radius: 999px;
+  flex-shrink: 0;  /* línea nueva */
 }
 
 #hud-puntos.pop {
@@ -147,6 +153,8 @@ header {
   border: 4px solid #8b6b3d;
   border-radius: 12px;
   overflow: hidden;
+  flex-shrink: 0;  /* línea nueva */
+  transition: width 0.3s ease;  /* línea nueva */
 }
 
 .mapa-img {
@@ -370,5 +378,36 @@ header {
 @media (prefers-reduced-motion: reduce) {
   .spinner {
     animation-duration: 2.5s;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 8;
+  box-sizing: border-box;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: #f3e6c4;
+  font-family: "Lora", serif;
+  pointer-events: none;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+}
+
+body.jugando footer {
+  display: none;
+}
+
+@media (display-mode: fullscreen) {
+  .btn-comenzar {
+    bottom: 140px;
   }
 }
