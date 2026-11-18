@@ -1,0 +1,220 @@
+{
+  "preguntas": [
+    {
+      "id": 1,
+      "pregunta": "¿Cuál es la capital de Canadá?",
+      "opciones": [
+        "Toronto",
+        "Ottawa",
+        "Vancouver"
+      ],
+      "correcta": 1,
+      "respuesta_correcta": "Ottawa",
+      "explicacion": "Ottawa es la capital de Canadá, donde está el gobierno. Toronto es la ciudad más grande, pero no la capital."
+    },
+    {
+      "id": 2,
+      "pregunta": "¿Quién escribió “Cien años de soledad”?",
+      "opciones": [
+        "Gabriel García Márquez",
+        "Mario Vargas Llosa",
+        "Pablo Neruda"
+      ],
+      "correcta": 0,
+      "respuesta_correcta": "Gabriel García Márquez",
+      "explicacion": "Es una novela del escritor colombiano Gabriel García Márquez (1967). Vargas Llosa es peruano y Neruda era poeta."
+    },
+    {
+      "id": 5,
+      "pregunta": "¿Quién fue el autor de “El Martín Fierro”?",
+      "opciones": [
+        "Ricardo Güiraldes",
+        "Leopoldo Lugones",
+        "José Hernández"
+      ],
+      "correcta": 2,
+      "respuesta_correcta": "José Hernández",
+      "explicacion": "Martín Fierro es un poema gauchesco argentino escrito por José Hernández. Güiraldes y Lugones escribieron otras obras."
+    },
+    {
+      "id": 7,
+      "pregunta": "¿Qué científico descubrió la penicilina?",
+      "opciones": [
+        "Louis Pasteur",
+        "Alexander Fleming",
+        "Marie Curie"
+      ],
+      "correcta": 1,
+      "respuesta_correcta": "Alexander Fleming",
+      "explicacion": "En 1928 Fleming notó que un moho mataba bacterias, y así surgió el primer antibiótico. Pasteur y Curie hicieron otros descubrimientos."
+    },
+    {
+      "id": 8,
+      "pregunta": "¿Cuál es la capital de Japón?",
+      "opciones": [
+        "Osaka",
+        "Kioto",
+        "Tokio"
+      ],
+      "correcta": 2,
+      "respuesta_correcta": "Tokio",
+      "explicacion": "Tokio es la capital actual de Japón. Kioto lo fue hace siglos y Osaka es solo una gran ciudad."
+    },
+    {
+      "id": 15,
+      "pregunta": "¿Qué imperio construyó Machu Picchu?",
+      "opciones": [
+        "Azteca",
+        "Maya",
+        "Inca"
+      ],
+      "correcta": 2,
+      "respuesta_correcta": "Inca",
+      "explicacion": "Los incas construyeron Machu Picchu en los Andes, en Perú. Aztecas y mayas vivieron en otras regiones de América."
+    },
+    {
+      "id": 22,
+      "pregunta": "¿Quién escribió “El Principito”?",
+      "opciones": [
+        "Julio Verne",
+        "Antoine de Saint-Exupéry",
+        "Hans Christian Andersen"
+      ],
+      "correcta": 1,
+      "respuesta_correcta": "Antoine de Saint-Exupéry",
+      "explicacion": "El escritor y piloto francés Antoine de Saint-Exupéry lo publicó en 1943. Verne escribió novelas de aventuras y Andersen, cuentos como “El patito feo”."
+    },
+    {
+      "id": 29,
+      "pregunta": "¿Cuál es el símbolo químico del sodio?",
+      "opciones": [
+        "S",
+        "So",
+        "Na"
+      ],
+      "correcta": 2,
+      "respuesta_correcta": "Na",
+      "explicacion": "Na viene del latín natrium, el nombre antiguo del sodio. La S es el símbolo del azufre."
+    },
+    {
+      "id": 30,
+      "pregunta": "¿Cuál es el hueso más largo del cuerpo humano?",
+      "opciones": [
+        "Húmero",
+        "Fémur",
+        "Tibia"
+      ],
+      "correcta": 1,
+      "respuesta_correcta": "Fémur",
+      "explicacion": "El fémur está en el muslo y es el hueso más largo y fuerte. El húmero es del brazo y la tibia, de la pierna."
+    },
+    {
+      "id": 31,
+      "pregunta": "¿Quién fue la primera persona en ganar premios Nobel en dos disciplinas científicas distintas?",
+      "opciones": [
+        "Marie Curie",
+        "Albert Einstein",
+        "Niels Bohr"
+      ],
+      "correcta": 0,
+      "respuesta_correcta": "Marie Curie",
+      "explicacion": "Marie Curie ganó el Nobel de Física (1903) y el de Química (1911). Einstein y Bohr ganaron solo el de Física."
+    },
+    {
+      "id": 32,
+      "pregunta": "¿Quién pintó “Las Meninas”?",
+      "opciones": [
+        "Goya",
+        "Velázquez",
+        "El Greco"
+      ],
+      "correcta": 1,
+      "respuesta_correcta": "Velázquez",
+      "explicacion": "Diego Velázquez pintó “Las Meninas” en 1656. Goya y El Greco fueron otros grandes pintores españoles, de épocas distintas."
+    },
+    {
+      "id": 33,
+      "pregunta": "¿Cuál es el desierto más grande del mundo?",
+      "opciones": [
+        "Sahara",
+        "Antártico",
+        "Gobi"
+      ],
+      "correcta": 1,
+      "respuesta_correcta": "Antártico",
+      "explicacion": "Un desierto es una zona con muy pocas precipitaciones, aunque haga frío. La Antártida es el más grande; el Sahara es el mayor desierto cálido."
+    },
+    {
+      "id": 34,
+      "pregunta": "¿En qué provincia se encuentra el Aconcagua, la montaña más alta de América?",
+      "opciones": [
+        "San Juan",
+        "Mendoza",
+        "Salta"
+      ],
+      "correcta": 1,
+      "respuesta_correcta": "Mendoza",
+      "explicacion": "El Aconcagua está en Mendoza, en la cordillera de los Andes, cerca de Chile, y mide casi 7.000 metros."
+    },
+    {
+      "id": 35,
+      "pregunta": "¿Cuál es la provincia más grande de Argentina?",
+      "opciones": [
+        "Santa Cruz",
+        "Buenos Aires",
+        "Chubut"
+      ],
+      "correcta": 1,
+      "respuesta_correcta": "Buenos Aires",
+      "explicacion": "Buenos Aires es la más grande por superficie, con unos 307.000 km². Santa Cruz es la segunda y Chubut, más chica."
+    },
+    {
+      "id": 36,
+      "pregunta": "¿Dónde se declaró la Independencia argentina en 1816?",
+      "opciones": [
+        "Buenos Aires",
+        "San Miguel de Tucumán",
+        "Córdoba"
+      ],
+      "correcta": 1,
+      "respuesta_correcta": "San Miguel de Tucumán",
+      "explicacion": "El Congreso se reunió en San Miguel de Tucumán y declaró la Independencia el 9 de julio de 1816."
+    },
+    {
+      "id": 37,
+      "pregunta": "¿Qué año ganó Argentina su primer Mundial de fútbol?",
+      "opciones": [
+        "1930",
+        "1978",
+        "1986"
+      ],
+      "correcta": 1,
+      "respuesta_correcta": "1978",
+      "explicacion": "Argentina fue campeona por primera vez en 1978, jugando como local. En 1930 perdió la final y en 1986 ganó su segundo título."
+    },
+    {
+      "id": 38,
+      "pregunta": "¿Quién escribió la novela “Rayuela”?",
+      "opciones": [
+        "Jorge Luis Borges",
+        "Julio Cortázar",
+        "Ernesto Sabato"
+      ],
+      "correcta": 1,
+      "respuesta_correcta": "Julio Cortázar",
+      "explicacion": "Julio Cortázar la publicó en 1963. Borges es conocido por sus cuentos y Sabato por novelas como “El túnel”."
+    },
+    {
+      "id": 39,
+      "pregunta": "¿Qué provincia es la principal productora de yerba mate de Argentina?",
+      "opciones": [
+        "Corrientes",
+        "Misiones",
+        "Chaco"
+      ],
+      "correcta": 1,
+      "respuesta_correcta": "Misiones",
+      "explicacion": "Misiones produce la mayor parte de la yerba mate argentina. Corrientes también la cultiva, pero en menor cantidad."
+    }
+  ]
+}
