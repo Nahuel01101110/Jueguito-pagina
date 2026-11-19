@@ -1,5 +1,6 @@
 const PUNTOS_POR_ACIERTO = 100;
 const DURACION_PASO = 700;
+const PREGUNTAS_POR_PARTIDA = 9; // una pregunta por círculo del sendero (WAYPOINTS)
 
 // Cada pregunta tiene su explicación, que se muestra después de responder (acierte o no).
 // "correcta" debe ser idéntica a una de las opciones.
@@ -57,7 +58,116 @@ const PREGUNTAS = [
 		opciones: ["El corazón humano tiene cuatro cavidades", "Los delfines son mamíferos", "Las arañas son insectos"],
 		correcta: "Las arañas son insectos",
 		explicacion: "Las arañas son arácnidos: tienen 8 patas y el cuerpo en dos partes, mientras que los insectos tienen 6 patas y el cuerpo en tres partes. Las otras dos afirmaciones son verdaderas."
+	},
+	{
+		texto: "¿Cuál es la capital de Canadá?",
+		opciones: ["Toronto", "Ottawa", "Vancouver"],
+		correcta: "Ottawa",
+		explicacion: "Ottawa es la capital de Canadá, donde está el gobierno. Toronto es la ciudad más grande, pero no la capital."
+	},
+	{
+		texto: "¿Quién escribió “Cien años de soledad”?",
+		opciones: ["Gabriel García Márquez", "Mario Vargas Llosa", "Pablo Neruda"],
+		correcta: "Gabriel García Márquez",
+		explicacion: "Es una novela del escritor colombiano Gabriel García Márquez (1967). Vargas Llosa es peruano y Neruda era poeta."
+	},
+	{
+		texto: "¿Quién fue el autor de “El Martín Fierro”?",
+		opciones: ["Ricardo Güiraldes", "Leopoldo Lugones", "José Hernández"],
+		correcta: "José Hernández",
+		explicacion: "Martín Fierro es un poema gauchesco argentino escrito por José Hernández. Güiraldes y Lugones escribieron otras obras."
+	},
+	{
+		texto: "¿Qué científico descubrió la penicilina?",
+		opciones: ["Louis Pasteur", "Alexander Fleming", "Marie Curie"],
+		correcta: "Alexander Fleming",
+		explicacion: "En 1928 Fleming notó que un moho mataba bacterias, y así surgió el primer antibiótico. Pasteur y Curie hicieron otros descubrimientos."
+	},
+	{
+		texto: "¿Cuál es la capital de Japón?",
+		opciones: ["Osaka", "Kioto", "Tokio"],
+		correcta: "Tokio",
+		explicacion: "Tokio es la capital actual de Japón. Kioto lo fue hace siglos y Osaka es solo una gran ciudad."
+	},
+	{
+		texto: "¿Qué imperio construyó Machu Picchu?",
+		opciones: ["Azteca", "Maya", "Inca"],
+		correcta: "Inca",
+		explicacion: "Los incas construyeron Machu Picchu en los Andes, en Perú. Aztecas y mayas vivieron en otras regiones de América."
+	},
+	{
+		texto: "¿Cuál es el símbolo químico del sodio?",
+		opciones: ["S", "So", "Na"],
+		correcta: "Na",
+		explicacion: "Na viene del latín natrium, el nombre antiguo del sodio. La S es el símbolo del azufre."
+	},
+	{
+		texto: "¿Quién escribió “El Principito”?",
+		opciones: ["Julio Verne", "Antoine de Saint-Exupéry", "Hans Christian Andersen"],
+		correcta: "Antoine de Saint-Exupéry",
+		explicacion: "Lo escribió el aviador y escritor francés Antoine de Saint-Exupéry y se publicó en 1943. Julio Verne es el autor de novelas de aventuras como “La vuelta al mundo en 80 días”, y Andersen escribió cuentos como “El patito feo”."
+	},
+	{
+		texto: "¿Cuál es el hueso más largo del cuerpo humano?",
+		opciones: ["Húmero", "Fémur", "Tibia"],
+		correcta: "Fémur",
+		explicacion: "El fémur está en el muslo y mide cerca de un cuarto de la altura de una persona. El húmero es el hueso del brazo y la tibia está en la pierna, debajo de la rodilla; ambos son más cortos."
+	},
+	{
+		texto: "¿Quién fue la primera persona en ganar premios Nobel en dos disciplinas científicas distintas?",
+		opciones: ["Marie Curie", "Albert Einstein", "Niels Bohr"],
+		correcta: "Marie Curie",
+		explicacion: "Marie Curie ganó el Nobel de Física en 1903 y el de Química en 1911. Einstein ganó solo el de Física (1921) y Bohr también solo el de Física (1922)."
+	},
+	{
+		texto: "¿Quién pintó “Las Meninas”?",
+		opciones: ["Goya", "Velázquez", "El Greco"],
+		correcta: "Velázquez",
+		explicacion: "Diego Velázquez la pintó en 1656, y hoy se exhibe en el Museo del Prado, en Madrid. Goya y El Greco también son pintores españoles, pero de otras épocas y estilos."
+	},
+	{
+		texto: "¿Cuál es el desierto más grande del mundo?",
+		opciones: ["Sahara", "Antártico", "Gobi"],
+		correcta: "Antártico",
+		explicacion: "Un desierto se define por la poca lluvia, no por el calor. La Antártida tiene unos 14 millones de km², mucho más que el Sahara (cerca de 9 millones), que es el desierto cálido más grande. El Gobi es bastante más chico."
+	},
+	{
+		texto: "¿En qué provincia se encuentra el Aconcagua, la montaña más alta de América?",
+		opciones: ["San Juan", "Mendoza", "Salta"],
+		correcta: "Mendoza",
+		explicacion: "El Aconcagua está en la cordillera de los Andes, en el norte de Mendoza, y mide unos 6.960 metros. Es la cima más alta de América y de todo el hemisferio sur y el hemisferio occidental."
+	},
+	{
+		texto: "¿Cuál es la provincia más grande de Argentina?",
+		opciones: ["Santa Cruz", "Buenos Aires", "Chubut"],
+		correcta: "Buenos Aires",
+		explicacion: "Buenos Aires tiene unos 307.000 km², la mayor superficie de todas las provincias. Santa Cruz le sigue con unos 244.000 km². Mucha gente piensa en la Patagonia, pero Buenos Aires es más grande."
+	},
+	{
+		texto: "¿Dónde se declaró la Independencia argentina en 1816?",
+		opciones: ["Buenos Aires", "San Miguel de Tucumán", "Córdoba"],
+		correcta: "San Miguel de Tucumán",
+		explicacion: "El 9 de julio de 1816, el Congreso de Tucumán declaró la Independencia en la casa de Tucumán. La Revolución de Mayo de 1810, en cambio, sí fue en Buenos Aires."
+	},
+	{
+		texto: "¿Qué año ganó Argentina su primer Mundial de fútbol?",
+		opciones: ["1930", "1978", "1986"],
+		correcta: "1978",
+		explicacion: "Argentina ganó su primer Mundial en 1978, jugando de local, con una final contra Países Bajos (3 a 1). En 1930 llegó a la final pero perdió con Uruguay, y el segundo título fue en 1986."
+	},
+	{
+		texto: "¿Quién escribió la novela “Rayuela”?",
+		opciones: ["Jorge Luis Borges", "Julio Cortázar", "Ernesto Sabato"],
+		correcta: "Julio Cortázar",
+		explicacion: "Julio Cortázar publicó “Rayuela” en 1963. Se puede leer en distinto orden, saltando entre capítulos. Borges escribió sobre todo cuentos y poesía, y Sabato novelas como “El túnel”."
+	},
+	{
+		texto: "¿Qué provincia es la principal productora de yerba mate de Argentina?",
+		opciones: ["Corrientes", "Misiones", "Chaco"],
+		correcta: "Misiones",
+		explicacion: "Misiones produce la mayor parte de la yerba mate del país, gracias a su suelo rojizo y su clima húmedo. Corrientes también produce, pero en menor cantidad. Chaco no es una zona yerbatera importante."
 	}
+	
 ];
 
 // Círculos del sendero, como porcentaje del ancho (x) y del alto (y) de mapa.png.
@@ -289,7 +399,7 @@ function mostrarFinal() {
 async function iniciarJuego(esperarAntesDePregunta = true) {
 	partida++;
 	const idPartida = partida;
-	preguntasPartida = mezclarLista(PREGUNTAS);
+	preguntasPartida = mezclarLista(PREGUNTAS).slice(0, PREGUNTAS_POR_PARTIDA);
 	nivel = 0;
 	puntos = 0;
 	alturaPanelMax = 0;
