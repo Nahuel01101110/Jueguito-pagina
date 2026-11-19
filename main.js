@@ -96,76 +96,76 @@ const PREGUNTAS = [
 		explicacion: "Los incas construyeron Machu Picchu en los Andes, en Perú. Aztecas y mayas vivieron en otras regiones de América."
 	},
 	{
-		texto: "¿Quién escribió “El Principito”?",
-		opciones: ["Julio Verne", "Antoine de Saint-Exupéry", "Hans Christian Andersen"],
-		correcta: "Antoine de Saint-Exupéry",
-		explicacion: "El escritor y piloto francés Antoine de Saint-Exupéry lo publicó en 1943. Verne escribió novelas de aventuras y Andersen, cuentos como “El patito feo”."
-	},
-	{
 		texto: "¿Cuál es el símbolo químico del sodio?",
 		opciones: ["S", "So", "Na"],
 		correcta: "Na",
 		explicacion: "Na viene del latín natrium, el nombre antiguo del sodio. La S es el símbolo del azufre."
 	},
 	{
+		texto: "¿Quién escribió “El Principito”?",
+		opciones: ["Julio Verne", "Antoine de Saint-Exupéry", "Hans Christian Andersen"],
+		correcta: "Antoine de Saint-Exupéry",
+		explicacion: "Lo escribió el aviador y escritor francés Antoine de Saint-Exupéry y se publicó en 1943. Julio Verne es el autor de novelas de aventuras como “La vuelta al mundo en 80 días”, y Andersen escribió cuentos como “El patito feo”."
+	},
+	{
 		texto: "¿Cuál es el hueso más largo del cuerpo humano?",
 		opciones: ["Húmero", "Fémur", "Tibia"],
 		correcta: "Fémur",
-		explicacion: "El fémur está en el muslo y es el hueso más largo y fuerte. El húmero es del brazo y la tibia, de la pierna."
+		explicacion: "El fémur está en el muslo y mide cerca de un cuarto de la altura de una persona. El húmero es el hueso del brazo y la tibia está en la pierna, debajo de la rodilla; ambos son más cortos."
 	},
 	{
 		texto: "¿Quién fue la primera persona en ganar premios Nobel en dos disciplinas científicas distintas?",
 		opciones: ["Marie Curie", "Albert Einstein", "Niels Bohr"],
 		correcta: "Marie Curie",
-		explicacion: "Marie Curie ganó el Nobel de Física (1903) y el de Química (1911). Einstein y Bohr ganaron solo el de Física."
+		explicacion: "Marie Curie ganó el Nobel de Física en 1903 y el de Química en 1911. Einstein ganó solo el de Física (1921) y Bohr también solo el de Física (1922)."
 	},
 	{
 		texto: "¿Quién pintó “Las Meninas”?",
 		opciones: ["Goya", "Velázquez", "El Greco"],
 		correcta: "Velázquez",
-		explicacion: "Diego Velázquez pintó “Las Meninas” en 1656. Goya y El Greco fueron otros grandes pintores españoles, de épocas distintas."
+		explicacion: "Diego Velázquez la pintó en 1656, y hoy se exhibe en el Museo del Prado, en Madrid. Goya y El Greco también son pintores españoles, pero de otras épocas y estilos."
 	},
 	{
 		texto: "¿Cuál es el desierto más grande del mundo?",
 		opciones: ["Sahara", "Antártico", "Gobi"],
 		correcta: "Antártico",
-		explicacion: "Un desierto es una zona con muy pocas precipitaciones, aunque haga frío. La Antártida es el más grande; el Sahara es el mayor desierto cálido."
+		explicacion: "Un desierto se define por la poca lluvia, no por el calor. La Antártida tiene unos 14 millones de km², mucho más que el Sahara (cerca de 9 millones), que es el desierto cálido más grande. El Gobi es bastante más chico."
 	},
 	{
 		texto: "¿En qué provincia se encuentra el Aconcagua, la montaña más alta de América?",
 		opciones: ["San Juan", "Mendoza", "Salta"],
 		correcta: "Mendoza",
-		explicacion: "El Aconcagua está en Mendoza, en la cordillera de los Andes, cerca de Chile, y mide casi 7.000 metros."
+		explicacion: "El Aconcagua está en la cordillera de los Andes, en el norte de Mendoza, y mide unos 6.960 metros. Es la cima más alta de América y de todo el hemisferio sur y el hemisferio occidental."
 	},
 	{
 		texto: "¿Cuál es la provincia más grande de Argentina?",
 		opciones: ["Santa Cruz", "Buenos Aires", "Chubut"],
 		correcta: "Buenos Aires",
-		explicacion: "Buenos Aires es la más grande por superficie, con unos 307.000 km². Santa Cruz es la segunda y Chubut, más chica."
+		explicacion: "Buenos Aires tiene unos 307.000 km², la mayor superficie de todas las provincias. Santa Cruz le sigue con unos 244.000 km². Mucha gente piensa en la Patagonia, pero Buenos Aires es más grande."
 	},
 	{
 		texto: "¿Dónde se declaró la Independencia argentina en 1816?",
 		opciones: ["Buenos Aires", "San Miguel de Tucumán", "Córdoba"],
 		correcta: "San Miguel de Tucumán",
-		explicacion: "El Congreso se reunió en San Miguel de Tucumán y declaró la Independencia el 9 de julio de 1816."
+		explicacion: "El 9 de julio de 1816, el Congreso de Tucumán declaró la Independencia en la casa de Tucumán. La Revolución de Mayo de 1810, en cambio, sí fue en Buenos Aires."
 	},
 	{
 		texto: "¿Qué año ganó Argentina su primer Mundial de fútbol?",
 		opciones: ["1930", "1978", "1986"],
 		correcta: "1978",
-		explicacion: "Argentina fue campeona por primera vez en 1978, jugando como local. En 1930 perdió la final y en 1986 ganó su segundo título."
+		explicacion: "Argentina ganó su primer Mundial en 1978, jugando de local, con una final contra Países Bajos (3 a 1). En 1930 llegó a la final pero perdió con Uruguay, y el segundo título fue en 1986."
 	},
 	{
 		texto: "¿Quién escribió la novela “Rayuela”?",
 		opciones: ["Jorge Luis Borges", "Julio Cortázar", "Ernesto Sabato"],
 		correcta: "Julio Cortázar",
-		explicacion: "Julio Cortázar la publicó en 1963. Borges es conocido por sus cuentos y Sabato por novelas como “El túnel”."
+		explicacion: "Julio Cortázar publicó “Rayuela” en 1963. Se puede leer en distinto orden, saltando entre capítulos. Borges escribió sobre todo cuentos y poesía, y Sabato novelas como “El túnel”."
 	},
 	{
 		texto: "¿Qué provincia es la principal productora de yerba mate de Argentina?",
 		opciones: ["Corrientes", "Misiones", "Chaco"],
 		correcta: "Misiones",
-		explicacion: "Misiones produce la mayor parte de la yerba mate argentina. Corrientes también la cultiva, pero en menor cantidad."
+		explicacion: "Misiones produce la mayor parte de la yerba mate del país, gracias a su suelo rojizo y su clima húmedo. Corrientes también produce, pero en menor cantidad. Chaco no es una zona yerbatera importante."
 	}
 ];
 
